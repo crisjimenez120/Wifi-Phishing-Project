@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="hunter.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.ico">
+    <title>Hunter Login</title>
+    <script>
+      function validateForm() {
+          var x = document.forms["theform"]["wfphshr-email"].value;
+          var x = document.forms["theform"]["wfphshr-password"].value;
+          if (5>=x.length) {
+              alert("Failed to authenticate. Wrong NetID or Password.");
+              return false;
+          }
+          redirectMe();
+      }
+          function redirectMe() {
+            window.location.replace("http://www.hunter.cuny.edu/main/");
+            return false;
+          }
+    </script>
+  </head>
+
+  <body>
+    
+      <div class="container" id ="login">
+        <nav class="navbar">  
+          <span class="navbar-brand mb-0 h1" src = "images/headerbackground.png"> <img src="images/logo.png" alt=""></span>
+        </nav>
+        <div class="navbar2">  
+          <span class="navbar-brand mb-0 h1" >. </span>
+        </div>
+
+        <form onsubmit="return validateForm();">
+          <div class="welcome">
+            <p>Welcome to HunterNet, Hunter College's wireless network. 
+            </br> Please log in using your NetID and password.</p>
+           </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><strong>NetID</strong></label>
+            <input type="name" class="form-control" style= "width: 55%" name="wfphshr-NetID">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1"><strong>Password</strong></label>
+            <input type="password" class="form-control" style = "width: 55%" name="wfphshr-password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1"><strong>Terms</strong></label>
+          </br>
+            <input type="checkbox"> I accept the <a href="#">terms of use</a>
+          </div>
+          <div>
+            <button type="submit" class="btn" onclick="return redirectMe();">Log In</button>
+          </div>
+          </br>
+          <div class = "helpdesk">
+            <p>
+              If you are having issues signing in, contact your respective helpdesk:
+            </p> 
+          
+          <p>
+            <strong>
+            Student Help Desk
+            </strong>
+            </br>
+            Hunter North, Room 303</br>
+            (212) 650-3624</br>
+            studenthelpdesk@hunter.cuny.edu</br>
+            </br>
+            <strong>
+            Faculty & Staff Help Desk
+            </strong>
+            </br>
+            Hunter North, Room 303</br>
+            (212) 722-4357</br>
+            helpdesk@hunter.cuny.edu</br>
+          </p>
+         </div>
+        </form>
+       </div>
+       <div class="container" id="footer">
+        <footer> © 2018 Hunter College</footer>
+       
+       </div>
+
+       <div class="container" id="footer2">
+        <div class="row">
+          <div class="col-sm">
+            <strong>Hunter College</strong></br>
+            695 Park Ave </br>
+            NY, NY 10065 </br>
+            212.772.4000
+          </div>
+          <div class="col-sm" id="cuny-logo">
+            <img src="images/cuny-logo.gif">
+          </div>
+        </div>
+       </div>
+           
+
+
+          
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
